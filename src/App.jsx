@@ -1,9 +1,11 @@
-import React from 'react'
+import "./app.css"
+import Layout from "./layout/Layout"
+
 
 function App() {
   return (
     <>  
-      <h1 className='text-center font-bold'> Welcome to JPathy</h1>
+      <Layout/>
     </>
   )
 }
