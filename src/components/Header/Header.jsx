@@ -8,10 +8,6 @@ import {FaCartPlus} from 'react-icons/fa'
 
 const navLinks = [
   {
-    path: "/login",
-    display: "Login",
-  },
-  {
     path: "/home",
     display: "Home",
   },

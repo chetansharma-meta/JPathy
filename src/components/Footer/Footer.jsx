@@ -40,10 +40,6 @@ const quickLinks01 = [
 
 const quickLinks02 = [
   {
-    path: "/login",
-    display: "Login",
-  },
-  {
     path: "/cart",
     display: "Cart",
   },
@@ -96,7 +92,7 @@ const Footer = () => {
 
           <div>
             <h2 className="text-[20] font-[700] mb-6 text-headingColor">
-              Login / Orders
+              My Orders
             </h2>
             <ul>
               {quickLinks02.map((link, index) => (

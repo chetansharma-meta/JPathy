@@ -1,7 +1,6 @@
 import React from 'react'
 import Home from "../pages/Home"
 import Contact from "../pages/Contact"
-import Login from "../pages/Login"
 import Consult from "../pages/Consult"
 import Cart from "../pages/Cart"
 import About from "../pages/About"
@@ -12,7 +11,6 @@ const Routers = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/consult" element={<Consult />} />
