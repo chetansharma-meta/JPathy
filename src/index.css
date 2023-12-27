@@ -26,7 +26,7 @@
      }
 
      .header{
-        @apply bg-[url('./assets/mask.jpg')] bg-no-repeat bg-center bg-cover w-full h-[80px] leading-[100px];
+        @apply bg-[url('./assets/mask.jpg')] bg-no-repeat bg-center bg-cover w-full h-[60px] leading-[100px];
      }
 
 }
