@@ -35,8 +35,8 @@ export default function ConsultForm({ post }) {
     });
    
     return (
-        <form onSubmit={handleSubmit(submit)} className="flex flex-col flex-wrap justify-center text-center">
-            <div className="w-2/3 px-2 mx-auto">
+        <form onSubmit={handleSubmit(submit)} className="flex flex-col flex-wrap justify-center text-center m-20 ">
+            <div className="w-2/3 px-1 mx-auto">
                 <Input
                     label="Full Name :"
                     placeholder="Full Name"
