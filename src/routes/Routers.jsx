@@ -1,7 +1,7 @@
 import Home from "../pages/Home"
 import Contact from "../pages/Contact"
 // import Login from "../pages/Login"
-import Consult from "../pages/Consult"
+// import Consult from "../pages/Consult"
 
 import {Routes, Route} from 'react-router-dom'
 import Login from "../Backend/components/Loginpage.jsx"
