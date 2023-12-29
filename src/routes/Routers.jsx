@@ -1,7 +1,8 @@
 import Home from "../pages/Home"
 import Contact from "../pages/Contact"
 // import Login from "../pages/Login"
-// import Consult from "../pages/Consult"
+import Consult from "../pages/Consult"
+import AuthLayout from "../Backend/components/AuthLayout.jsx"
 
 import {Routes, Route} from 'react-router-dom'
 import Login from "../Backend/components/Loginpage.jsx"
@@ -26,7 +27,16 @@ const Routers = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/allpost" element={<Homepost />} />
       <Route path="/editpost" element={<EditPost />} />
-      <Route path="/addpost" element={<AddPost />} />
+      
+      
+       <Route path="/addpost" element={
+        <AuthLayout authentication>
+            <AddPost />
+
+        </AuthLayout>
+     
+      } />
+
       <Route path="/post/:slug" element={<Post />} />
     </Routes>
   )
