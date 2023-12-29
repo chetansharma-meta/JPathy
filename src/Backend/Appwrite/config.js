@@ -31,6 +31,36 @@ export class Service{
             console.log("Appwrite serive :: createPost :: error", error);
         }
     }
+    async deleteConsultPost(slug){
+        try {
+            await this.databases.deleteDocument(
+                import.meta.env.VITE_APPWRITE_DATABASE_ID,
+                import.meta.env.VITE_APPWRITE_CONSULTFORM_COLLECTION_ID,
+                slug
+            
+            )
+            return true
+        } catch (error) {
+            console.log("Appwrite serive :: deletePost :: error", error);
+            return false
+        }
+    }
+
+    async getConsultPosts(){
+        try {
+            return await this.databases.listDocuments(
+                import.meta.env.VITE_APPWRITE_DATABASE_ID,
+                import.meta.env.VITE_APPWRITE_CONSULTFORM_COLLECTION_ID,
+                
+                
+
+            )
+        } catch (error) {
+            console.log("Appwrite serive :: getPosts :: error", error);
+            return false
+        }
+    }
+
 
     async createPost({title, slug, content, featuredImage, status, userId}){
         try {
