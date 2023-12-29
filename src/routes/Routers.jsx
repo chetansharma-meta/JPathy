@@ -2,6 +2,7 @@ import Home from "../pages/Home"
 import Contact from "../pages/Contact"
 // import Login from "../pages/Login"
 import Consult from "../pages/Consult"
+import AuthLayout from "../Backend/components/AuthLayout.jsx"
 
 import {Routes, Route} from 'react-router-dom'
 import Login from "../Backend/components/Loginpage.jsx"
