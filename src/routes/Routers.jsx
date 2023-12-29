@@ -10,11 +10,13 @@ import  Homepost from "../Backend/pages/Homepost"
 import EditPost from '../Backend/pages/EditPost'
 import Post from '../Backend/pages/Post'
 import ConsultForm from '../Backend/post-form/ConsultForm'
-
+import ConsultFormResult from "../Backend/pages/ConsultFormResult.jsx"
 
 
 
 import AddPost from '../Backend/pages/AddPost'
+// import PostConsultForm from "../Backend/components/PostConsultForm.jsx"
+// import ConsultFormResult from "../Backend/pages/ConsultFormResult.jsx"
 
 const Routers = () => {
   return (
@@ -27,6 +29,7 @@ const Routers = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/allpost" element={<Homepost />} />
       <Route path="/editpost" element={<EditPost />} />
+      <Route path="/formresult" element={<ConsultFormResult />} />
       
       
        <Route path="/addpost" element={
