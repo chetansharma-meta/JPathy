@@ -58,7 +58,7 @@ export default function ConsultForm({ post }) {
    
     return (
         <form onSubmit={handleSubmit(submit)} className="flex flex-col flex-wrap justify-center text-center m-20 ">
-            <div className="w-2/3 px-1 mx-auto">
+            <div className="w-full px-1 mx-auto text-center">
                 <Input
                     label="Full Name :"
                     placeholder="Full Name"
@@ -69,6 +69,8 @@ export default function ConsultForm({ post }) {
                     label="Contact No. :"
                     placeholder="9876543211 with Whatsapp"
                     type="number"
+                    min={5000000000}
+                    max={9999999999}
                     className="mb-4"
                     {...register("contactno", { required: true })}
                 />
@@ -84,7 +86,7 @@ export default function ConsultForm({ post }) {
 
                 <Input
                    label={"Copy this code and wait for Whatsapp respone"}
-                   className="mb-4 "
+                   className="mb-4 text-yellow-400"
                    {...register("slug", { required: true })}
                    value={generateCode()}
                    placeholder={"type here to get ID"}
@@ -93,7 +95,7 @@ export default function ConsultForm({ post }) {
             <div className="w-1/3 px-2 mx-auto">
                 
                 
-                <button type="submit" className="w-full py-2 mt-5 bg-blue-400 rounded-full">
+                <button type="submit" className="px-10 py-2 mt-5 bg-blue-400 rounded-full">
                     {post ? "Update" : "Submit"}
                 </button>
             </div>

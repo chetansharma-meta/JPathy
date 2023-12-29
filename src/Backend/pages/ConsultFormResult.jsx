@@ -13,25 +13,25 @@ function ConsultFormResult() {
         })
     }, [])
   
-    // if (posts.length === 0) {
-    //     return (
-    //         <div className="w-full py-8 mt-4 text-center">
+    if (posts.length === 0) {
+        return (
+            <div className="w-full py-8 mt-4 text-center">
                 
-    //                 <div className="flex flex-wrap">
-    //                     <div className="p-2 w-full">
-    //                         <h1 className="text-2xl font-bold hover:text-gray-500">
-    //                            No Consult Form...
-    //                         </h1>
-    //                     </div>
-    //                 </div>
+                    <div className="flex flex-wrap">
+                        <div className="p-2 w-full">
+                            <h1 className="text-2xl font-bold hover:text-gray-500">
+                               No Consult Form...
+                            </h1>
+                        </div>
+                    </div>
                 
-    //         </div>
-    //     )
-    // }
+            </div>
+        )
+    }
     return (
-        <div className='w-full py-8'>
+        <div className='w-full py-8 '>
          
-                <div className='flex flex-wrap'>
+                <div className='flex flex-wrap w-[1500px] '>
                     {posts.map((post) => (
                         <div key={post.$id} className='p-2 w-1/4'>
                             <PostConsultForm {...post} />
