@@ -12,8 +12,8 @@ const navLinks = [
     display: "Home",
   },
   {
-    path: "/about",
-    display: "About",
+    path: "/allpost",
+    display: "Doctor's Corner",
   },
   {
     path: "/consult",
@@ -23,13 +23,21 @@ const navLinks = [
     path: "/contact",
     display: "Contact",
   },
+  {
+    path: "/addpost",
+    display: "Posting",
+  },
+  {
+    path: "/login",
+    display: "Login",
+  },
 ];
 
 const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
   const bannerRef = useRef(null);
-
+  
   const handleStickyHeader = () => {
     window.addEventListener("scroll", () => {
       if (
