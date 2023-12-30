@@ -119,8 +119,8 @@ const Header = () => {
       <header className="header flex items-center" ref={headerRef}>
         <div className="container">
           <div className="flex items-center justify-between">
-            <div>
-              <img src="" alt="Logo" />
+            <div className="font-bold">
+              <img src="" alt="Jpathy" />
             </div>
 
             <div className="navigation" ref={menuRef} onClick={toggleMenu}>

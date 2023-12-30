@@ -1,8 +1,9 @@
-import React from "react";
+
 
 import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { IoCallOutline } from "react-icons/io5";
 
 const socialLinks = [
   {
@@ -45,18 +46,19 @@ const quickLinks02 = [
   },
 ];
 
+
 const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
     <footer className="footer pb-16 pt-10">
       <div className="container">
-        <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px">
+        <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
 
           <div>
             <img src="" alt="Logo" />
             <p className="text-[16px] leading-7 font-[400] text-textColor">
-              Copyright &copy {year} all rights reserved.
+              Copyright &copy; {year} all rights reserved.
             </p>
 
             <div className="flex items-center gap-3 mt-4">
@@ -109,6 +111,9 @@ const Footer = () => {
           </div>
 
         </div>
+      </div>
+      <div className="fixed bottom-10 right-10 bg-gray-500 p-3 rounded-full hover:scale-125 hover:transition-all hover:cursor-pointer">
+                <a href="tel: +919045112722"><IoCallOutline className="text-4xl text-white " /></a>
       </div>
     </footer>
   );

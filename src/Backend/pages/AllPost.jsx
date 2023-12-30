@@ -1,5 +1,5 @@
 
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import { PostCard } from '../components/PostCard'
 import appwriteService from "../Appwrite/config";
 
