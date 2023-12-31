@@ -1,4 +1,5 @@
 import React from "react";
+import Select from "../components/Select";
 import { useForm } from "react-hook-form";
 
 import  Input from "../components/Input";
@@ -31,7 +32,7 @@ export default function ConsultForm({ post }) {
             problem: post?.problem || "",
             slug: post?.$id || "",
             status: post?.status || "active",
-            problemRelated: post?.problemRelated || "",
+            problemRelated: post?.problemRelated || "Skin Care",
 
 
            
@@ -75,12 +76,16 @@ export default function ConsultForm({ post }) {
                     className="mb-4"
                     {...register("contactno", { required: true })}
                 />
+                <div>
+                <label className="text-left text-gray-700 ">Category</label>
                 <Select
                     options={["Skin Care", "Hair Fall","Migraine","PCOS","Vitiligo","Kidney Stone","Other"]}
+                    placeholder="Select Category"
                     label="Category"
-                    className="mb-4"
+                    className="mb-4 mt-2"
                     {...register("problemRelated", { required: true })}
                 />
+                </div>
                 
                
             <Input

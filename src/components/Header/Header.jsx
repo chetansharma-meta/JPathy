@@ -23,14 +23,6 @@ const navLinks = [
     path: "/contact",
     display: "Contact",
   },
-  {
-    path: "/addpost",
-    display: "Posting",
-  },
-  {
-    path: "/login",
-    display: "Login",
-  },
 ];
 
 const Header = () => {
@@ -154,10 +146,6 @@ const Header = () => {
                   </figure>
                 </Link>
               </div>
-
-              <Link to="/cart">
-                <FaCartPlus className="text-xl text-white hover:text-gray-200"/>
-              </Link>
 
               <span className="md:hidden" onClick={toggleMenu}>
                 <BiMenu className="w-6 h-6 cursor-pointer text-white" />
