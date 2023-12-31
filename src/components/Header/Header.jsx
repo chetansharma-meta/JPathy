@@ -8,11 +8,11 @@ import {FaCartPlus} from 'react-icons/fa'
 
 const navLinks = [
   {
-    path: "/home",
+    path: "/",
     display: "Home",
   },
   {
-    path: "/allpost",
+    path: "/DrsCorner",
     display: "Doctor's Corner",
   },
   {
