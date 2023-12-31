@@ -77,7 +77,7 @@ export default function ConsultForm({ post }) {
                     {...register("contactno", { required: true })}
                 />
                 <div>
-                <label className="text-left text-gray-700 ">Category</label>
+               
                 <Select
                     options={["Skin Care", "Hair Fall","Migraine","PCOS","Vitiligo","Kidney Stone","Other"]}
                     placeholder="Select Category"
