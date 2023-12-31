@@ -31,6 +31,7 @@ export default function ConsultForm({ post }) {
             problem: post?.problem || "",
             slug: post?.$id || "",
             status: post?.status || "active",
+            problemRelated: post?.problemRelated || "",
 
 
            
@@ -74,7 +75,12 @@ export default function ConsultForm({ post }) {
                     className="mb-4"
                     {...register("contactno", { required: true })}
                 />
-               
+                <Select
+                    options={["Skin Care", "Hair Fall","Migraine","PCOS","Vitiligo","Kidney Stone","Other"]}
+                    label="Category"
+                    className="mb-4"
+                    {...register("problemRelated", { required: true })}
+                />
                 
                
             <Input
