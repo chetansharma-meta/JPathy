@@ -35,6 +35,66 @@ const Home = () => {
           />
         </div>
       </div>
+      <div className="text-5xl text-center mt-10">
+        We Treated 5000+ People
+      </div>
+      <div className="text-center my-20 flex flex-wrap justify-center gap-10">
+        
+        <div className="mx-10 border-2 p-10 rounded-2xl ">
+        <div className="ml-3 mb-3"> 
+          <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/external-skin-internal-human-organs-victoruler-flat-victoruler.png" alt="hair"/>
+        </div>
+        <p>HAIR FALL</p>
+        <p>TREATMENT</p>
+        </div>
+        
+        <div className="mx-10 border-2 p-10 rounded-2xl">
+        <div className="ml-3 mb-3">
+          <img src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/external-ovary-internal-human-organs-victoruler-linear-colour-victoruler.png" alt="Pcos"/>
+        </div>
+        <p>PCOS</p>
+        <p>TREATMENT</p>
+        </div>
+        
+        <div className="mx-10 border-2 p-10 rounded-2xl">
+        <div className="ml-3 mb-3">
+          <img src="https://img.icons8.com/external-justicon-flat-justicon/64/external-kidney-human-organs-justicon-flat-justicon.png" alt="kidney"/>
+        </div>
+        <p>STONE</p>
+        <p>TREATMENT</p>
+        </div>
+        
+        <div className="mx-10 border-2 p-10 rounded-2xl">
+        <div className="ml-3 mb-3">
+          <img src="https://img.icons8.com/pastel-glyph/64/throat--v2.png" alt="THYROID"/>
+        </div>
+        <p>THYROID</p>
+        <p>TREATMENT</p>
+        </div>
+        
+        <div className="mx-10 border-2 p-10 rounded-2xl">
+        <div className="ml-3 mb-3">     
+          <img src="https://img.icons8.com/dotty/80/cleansing.png" alt="skin"/>
+        </div>
+        <p>SKIN CARE</p>
+        <p>TREATMENT</p>
+        </div>
+        
+        <div className="mx-10 border-2 p-10 rounded-2xl">
+        <div className="ml-3 mb-3">
+          <img src="https://img.icons8.com/external-fauzidea-flat-fauzidea/64/external-throat-pandemic-fauzidea-flat-fauzidea.png" alt=""/>
+        </div>
+        <p>TONSILS</p>
+        <p>TREATMENT</p>
+        </div>
+        <div className="mx-10 border-2 p-10 rounded-2xl">
+        <div className="ml-3 mb-3">
+          <img src="https://img.icons8.com/color/48/headache.png" alt="headache" />
+        </div>
+        <p>MIGRAINE</p>
+        <p>TREATMENT</p>
+        </div>
+      </div>
 
       {/* Hero Section: Why Homeopathy */}
       <div className=" min-h-screen min-w-screen bg-gray-100 py-10 sm:py-32 px-5 sm:px-[15rem]">
