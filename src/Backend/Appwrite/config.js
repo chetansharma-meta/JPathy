@@ -13,7 +13,7 @@ export class Service{
         this.bucket = new Storage(this.client);
     }
 
-    async createConsultForm({fullName, slug, contactno, status, problem}){
+    async createConsultForm({fullName, slug, contactno, status, problem ,problemRelated}){
         try {
             return await this.databases.createDocument(
                 import.meta.env.VITE_APPWRITE_DATABASE_ID,
@@ -23,6 +23,7 @@ export class Service{
                     fullName,
                     contactno,
                     problem,
+                    problemRelated,
                     status,
                     
                 }
