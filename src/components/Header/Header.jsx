@@ -90,12 +90,12 @@ const Header = () => {
           <p className="text-sm leading-6 text-gray-50">
             <strong className="text-white">Talk to the Doctor</strong>
           </p>
-          <a
-            href="#"
+          <Link
+            to="/contact"
             className="flex-none rounded-full bg-gray-100 px-3.5 py-1 text-sm  text-textColor shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
           >
             Contact Now
-          </a>
+          </Link>
         </div>
         <div className="flex flex-1 justify-end">
           <button

@@ -27,11 +27,14 @@ const Contact = () => {
           </div>
         </div>
           <div className="bg-gray-200 p-10 text-center font-bold text-xl mt-12">
-          <p className="p-5 text-5xl">Jangid Homeopathy,</p>
-          <p className="w-screen ">Bansal Market, Narsipuram Colony, Mathura, Uttar Pradesh 281006</p>
-          
-          <p className="p-5">Contact: 5857252353</p>
-          <p className="">E-mail: Jpathy@gmail.com</p>
+          <p className="p-5 text-5xl text-center">Jangid Homeopathy</p>
+          <p className=" text-center">Bansal Market, Narsipuram Colony, </p>
+          <p className="text-center ">Mathura, Uttar Pradesh 281006</p>
+          <div className="flex flex-col">
+
+          <a href="tel:7417994664" className="p-5">Contact: 7417994664</a>
+          <a href="mailto:jangidHomeopathy@gmail.com" className="">E-mail: jangidHomeopathy@gmail.com</a>
+          </div>
           
           </div>
       </div>
