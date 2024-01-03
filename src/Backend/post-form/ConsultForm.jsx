@@ -12,7 +12,7 @@ export default function ConsultForm({ post }) {
     
 
     const navigate = useNavigate();
-   
+    
 
     const submit = async (data) => {
         
@@ -39,6 +39,7 @@ export default function ConsultForm({ post }) {
         },
     });
 
+    
     function generateCode() {
         
         const first4Letters = "JHP-"
@@ -54,7 +55,7 @@ export default function ConsultForm({ post }) {
       
         return code;
       }
-      
+      const gencode = generateCode()
     
       
    
@@ -99,8 +100,8 @@ export default function ConsultForm({ post }) {
                    label={"Copy this code and wait for Whatsapp respone"}
                    className="mb-4 text-yellow-400"
                    {...register("slug", { required: true })}
-                   value={generateCode()}
-                   placeholder={"type here to get ID"}
+                   value={`${gencode}`}
+                   placeholder={`type here to get ID ${gencode}`}
                />
             </div>
             <div className="w-1/3 px-2 mx-auto">
