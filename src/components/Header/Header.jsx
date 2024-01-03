@@ -4,6 +4,7 @@ import { BiMenu } from "react-icons/bi";
 import avatar from "../../assets/avatar.png";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 import {FaCartPlus} from 'react-icons/fa'
+import logo from '../../assets/jpathy.png'
 
 
 const navLinks = [
@@ -112,7 +113,7 @@ const Header = () => {
         <div className="container">
           <div className="flex items-center justify-between">
             <div className="font-bold">
-              <img src="" alt="Jpathy" />
+              <img src={logo} alt="Jpathy" className="h-14"/>
             </div>
 
             <div className="navigation" ref={menuRef} onClick={toggleMenu}>

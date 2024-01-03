@@ -1,4 +1,4 @@
-import doctor from "../assets/doctor.jpg";
+import doctor from "../assets/deveshji.jpg";
 import sweet from "../assets/swee.jpg";
 import homo from "../assets/homo.jpg";
 import homo2 from "../assets/homo2.jpg";
@@ -27,11 +27,11 @@ const Home = () => {
         </div>
 
         {/* Right Section */}
-        <div className="h-1/2 sm:h-5/6 w-full sm:w-2/5 my-5 sm:my-15 py-10 sm:py-20 px-5 sm:px-20">
+        <div className="h-1/2 sm:h-full w-full sm:w-2/5 my-5 sm:my-0 py-10 sm:py-14 px-5 sm:px-10">
           <img
             src={doctor}
             alt="Dr. Devesh Jangid"
-            className="rounded-xl border-2 bg-purple-400 h-[200px] sm:h-full w-[250px] sm:w-full mx-auto sm:mx-44"
+            className="rounded-xl border-2 bg-purple-400 h-[250px] sm:h-full w-[250px] sm:w-full mx-auto sm:mx-44"
           />
         </div>
       </div>
