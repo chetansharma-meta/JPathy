@@ -11,7 +11,7 @@ const Home = () => {
         {/* Left Section */}
         <div className="h-2/4 sm:h-full flex flex-col justify-center p-10 sm:px-20 bg-slate-500 sm:rounded-br-3xl">
           <h1 className="text-4xl sm:text-6xl text-black">
-            DR.<span className="text-[#60cf80] font-bold">Devesh</span>Sharma
+            Dr.<span className="text-[#60cf80] font-bold">Devesh</span>Sharma
           </h1>
           <h2 className="text-xl sm:text-3xl text-black">
             A <span className="text-[#60cf80] font-bold">HomeoPath</span> who

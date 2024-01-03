@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IoCallOutline } from "react-icons/io5";
+import logo from '../../assets/jpathy.png'
 
 const socialLinks = [
   {
@@ -56,7 +57,7 @@ const Footer = () => {
         <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
 
           <div>
-            <img src="" alt="Logo" />
+            <img src={logo} alt="Logo" className="h-16" />
             <p className="text-[16px] leading-7 font-[400] text-textColor">
               Copyright &copy; {year} all rights reserved.
             </p>
